@@ -9,21 +9,46 @@
         <link rel="icon" type="image/x-icon" href="../assets/img/diamantenegro.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?keyAIzaSyChoTvpG7kd7fpvL3o2wgV-FEoIQBrJVlo=">
+        </script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body id="page-top">
+        
+        <script>
+            $(document).ready(function() {
+              // Captura el evento de desplazamiento (scroll)
+              $(window).scroll(function() {
+                // Obtén la posición actual de desplazamiento
+                var scroll = $(window).scrollTop();
+          
+                // Cambia el fondo de la barra de navegación dependiendo de la posición de desplazamiento
+                if (scroll > 50) {
+                  $('.navbar').addClass('bg-dark'); // Agrega fondo oscuro
+                } else {
+                  $('.navbar').removeClass('bg-dark'); // Elimina fondo oscuro
+                }
+              });
+            });
+          </script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <div class="navbar-header d-flex align-items-center justify-content-between">
-                    <a class="navbar-brand" href="./index.html">
-                    <img src="../assets/img/diamantenegro.ico" alt="logo" width="100" height="100">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/diamantenegro.ico" alt="logo" width="50" height="50">
                     </a>
-                </div 
+                </div>
                 <div class="navbar-header d-flex align-items-center justify-content-between">
                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,11 +56,11 @@
                 
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="../nuevo_proyecto/index.html">Inicio</a></li>                        
-                        <li class="nav-item"><a class="nav-link" href="../nuevo_proyecto/pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../nuevo_proyecto/pages/productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../nuevo_proyecto/pages/trabajos.html">Trabajos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../nuevo_proyecto/pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>                        
+                        <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/trabajos.html">Trabajos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
              </div>
@@ -62,121 +87,104 @@
               z-index: 1; 
             }
           </style>
+
+<div id="whatsapp-icon">
+    <a href="https://web.whatsapp.com/" target="_blank">
+      <img src="../assets/img/logowsp2.png" alt="WhatsApp" width="100%" height="100%">
+    </a>
+  </div>
+          <script>
+             $(document).ready(function () {
+             $(window).scroll(function () {
+        
+            });
+            });
+          </script>
+
+          <style>
+
+           body {
+           height: 1500px;
+           margin: 0;
+           padding: 0;
+            }
+
+            #whatsapp-icon {
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    #whatsapp-icon:hover {
+      opacity: 1;
+    }
+  </style>
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-100 text-uppercase">Contacto</h1>
-                        <h2 class="text-white-100 mx-auto mt-2 mb-5">Lider en Estetica del Automotor.</h2>
-                        
-                    </div>
+              <div class="d-flex justify-content-center">
+                <div class="text-center">
+                  <h1 class="mx-auto my-100 text-uppercase">Contacto</h1>
+                  
+                  <h2 class="text-white-100 mx-auto mt-2 mb-5">Contactate con nosotros.</h2>
                 </div>
+              </div>
             </div>
-            
-        </header>
+          </header>
         <!-- About-->
-        <section class="about-section text-center" id="about">
+        <div class="about-section text-center" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-                        <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                            The theme is open source, and you can use it for any purpose, personal or commercial.
-                        </p>
+                        <h2 class="text-white mb-4">¿Donde podes encontrarnos?</h2>
+                        <img class="img-fluid" src="../assets/img/mapa.jpg" alt="..." />
                     </div>
                 </div>
-                <img class="img-fluid" src="../nuevo_proyecto/assets/img/FB_IMG_1509140295632.jpg" alt="..." />
-            </div>
+                <p class="text-white-50"> Dirección: Bondplan 957, CABA, Argentina </p>
+
+                <p class="text-white-50"> Horario de Atención: Lunes a Viernes: 9:00 AM - 6:00 PM Sábado: 10:00 AM - 2:00 PM Domingo: Cerrado </p>
+
+                <p class="text-white-50"> Teléfono: 1160501865 </p>
+                <p class="text-white-50"> Correo Electrónico: brilliantargentina@gmail.com </p>
+                <p class="text-white-50"> Nos esforzamos por brindar un servicio excepcional a nuestros clientes, y esperamos poder ayudarle en persona. Si tienes alguna pregunta o necesitas más información antes de tu visita, no dudes en comunicarte con nosotros.</p>
+
+                <p class="text-white-50">¡Esperamos verte pronto en Brilliant Detailing!</p>
+
+                                         
+        </div>
         </section>
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                        </div>
-                    </div>
-                </div>
+                <style>
+                    body {
+                      text-align: center; /* Centra el contenido horizontalmente */
+                    }
+                
+                    .text-black-100 {
+                      color: black; /* Establece el color del texto a negro */
+                      font-size: 6em; /* Ajusta el tamaño del texto, puedes cambiar "2em" según tus preferencias */
+                      margin-bottom: 20px; /* Agrega un margen inferior para separar del siguiente elemento */
+                      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto */
+                    }
+                  </style>
+                <h2 class="text-black-100">Capacitaciones.</h2>
+                         
+                <iframe width="1000" height="560" src="https://www.youtube.com/embed/=0VZJIM1Unwc&t=4s&ab_channel=BrilliantDetailingOk" frameborder="0" allowfullscreen></iframe>
                 <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
         </section>
         <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
+     
         <!-- Contact-->
         <section class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
@@ -185,9 +193,9 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
+                                <h4 class="text-uppercase m-0">Dirección</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <div class="small text-black-50">Bonpland 957 - CABA - Argentina</div>
                             </div>
                         </div>
                     </div>
@@ -197,7 +205,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                                <div class="small text-black-50"><a href="#!">brilliantargentina@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -205,22 +213,23 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <h4 class="text-uppercase m-0">Telefono</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <div class="small text-black-50">011 6965-6430 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                    <a class="mx-2" href="https://www.youtube.com/@BrilliantDetailingOk"><i class="fab fa-youtube"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/brilliantdetailingargentina"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/brilliantdetailingargentina"><i class="fab fa-instagram"></i></a>
                 </div>
+               
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Brilliant Detailing 2023</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -235,3 +244,4 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+
